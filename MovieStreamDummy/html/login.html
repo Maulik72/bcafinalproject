@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/login.css">
+    <script src="js/login.js" defer></script> <!-- Added defer to load JS after HTML -->
+    <title>Login - Movie Stream</title>
+</head>
+<body>
+    <div class="container">
+        <h1>Welcome Back to Movie Stream</h1>
+        <p>Your one-stop solution to entertainment anytime, anywhere!</p>
+        <!-- Ensure the form sends data to login.php -->
+        <form id="login-form" method="POST" action="login.php"> <!-- Updated action and method -->
+            <div class="form-group">
+                <label for="login-email">Email</label>
+                <input type="email" id="login-email" name="email" placeholder="Enter your email" required>
+            </div>
+            <div class="form-group">
+                <label for="login-password">Password</label>
+                <input type="password" id="login-password" name="password" placeholder="Enter your password" required>
+            </div>
+            <button type="submit">Login</button>
+            <p>Don't have an account? <a href="register.html">Register here</a></p>
+        </form>
+    </div>
+</body>
+</html>
